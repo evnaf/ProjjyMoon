@@ -1,7 +1,7 @@
 import pygame as pg
 import sys as sy
 from settings import *
-from world import World as World
+from world import World 
 
 class moonglow:
     def __init__(self): 
