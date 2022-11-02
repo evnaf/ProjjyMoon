@@ -21,7 +21,7 @@ class moonglow:
             dt = self.clock.tick() / 1000
             self.world.run(dt)
             pg.display.update()
-
+    
 if __name__ == '__main__':
     moonglow = moonglow()
     moonglow.run()

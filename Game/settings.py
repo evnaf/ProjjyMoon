@@ -19,15 +19,13 @@ PLAYER_TOOL_OFFSET = {
 LAYERS = {
 	'water': 0,
 	'ground': 1,
-	'soil': 2,
-	'soil water': 3,
-	'rain floor': 4,
+	'foreground': 2,
 	'house bottom': 5,
-	'ground plant': 6,
+	'object': 6,
 	'main': 7,
 	'house top': 8,
-	'fruit': 9,
-	'rain drops': 10
+	'pickup': 9,
+	'smoke': 10
 }
 
 APPLE_POS = {

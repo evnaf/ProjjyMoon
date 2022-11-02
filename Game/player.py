@@ -14,6 +14,7 @@ class Player(py.sprite.Sprite):
         # General Setup
         self.image = self.animations[self.status][self.frame_idx]
         self.rect = self.image.get_rect(center = pos)
+        self.z = LAYERS['main']
         
         # Move the player
         self.direction = py.math.Vector2()
@@ -32,10 +33,9 @@ class Player(py.sprite.Sprite):
         self.selected_tool = self.tools[self.tool_index]
         
         # Elements used
-        self.elements = ['oxygen', 'hydrogen', 'nitrogen', 'carbon']
+        # self.items = ['oxygen', 'hydrogen', 'nitrogen', 'carbon', 'scrap', 'metal', 'steel', 'crystal', 'astral']
+        # self.item_index = 0
         
-        # Minerals
-        self.minerals = ['scrap', 'metal', 'steel', 'crystal', 'astral']
         
     def import_assets(self):
         self.animations = {'up': [],'down': [],'left': [],'right': [],
